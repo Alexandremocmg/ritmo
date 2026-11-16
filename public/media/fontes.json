@@ -363,6 +363,47 @@
       "sha256": "da2dfb78e1d482f039588307f9711ba329322900d607cf0cfe390a0af66ec419",
       "note": "Comparativo do autor: a metade superior mostra erros e a inferior, a execução destacada em verde. A variação é sentada em banco inclinado.",
       "reviewMethod": "Inspeção visual de sequências de quadros do original e da edição; decodificação integral e metadados conferidos."
+    },
+    {
+      "name": "Remada na máquina",
+      "slug": "remada-maquina",
+      "kind": "bundled",
+      "file": "public/media/youcan-library-remada-maquina.mp4",
+      "poster": "public/media/youcan-library-remada-maquina.jpg",
+      "variant": "Remada sentada na máquina com apoio para o peito",
+      "note": "Demonstração animada em máquina com alavancas. Fonte: biblioteca pública; vínculo oficial com @joinyoucan não confirmado.",
+      "source": "https://youcan-cms.shadhinarafat.workers.dev/exercises/ddbccb4b-1f63-403c-8ee4-4e4d06df05d7",
+      "sourceLabel": "Ver na biblioteca de origem",
+      "author": "YouCan Workout Library",
+      "editedWith": "FFmpeg 9.0.2",
+      "duration": 5.733333,
+      "provider": "YouCan Workout Library",
+      "sourceId": "ddbccb4b-1f63-403c-8ee4-4e4d06df05d7",
+      "mediaSource": "https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Back/male/Lever%20Seated%20Row.mp4",
+      "officialRelationshipConfirmed": false,
+      "originalTikTokPost": null,
+      "start": 0,
+      "end": 5.733333,
+      "format": "mp4",
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "width": 720,
+      "height": 720,
+      "frameRate": "30/1",
+      "audio": false,
+      "bytes": 175319,
+      "sha256": "5542ada6413b856a1310104b9f93eb8a6cd3bc2dbad8e9c0c274ebdbceee24ea",
+      "originalSha256": "4d719accd11c2d5e2dd7083033e039f9aad276de3878398147d83e54ae387ff9",
+      "edits": [
+        "Redimensionamento para 720 × 720 mantendo proporção",
+        "30 fps, preservando a duração",
+        "MP4 H.264 / yuv420p",
+        "Sem áudio",
+        "Fast start",
+        "Capa extraída do vídeo"
+      ],
+      "review": "Pessoa animada sentada, apoio anterior no peito, mãos em puxadores e movimento bilateral de remada em alavancas com anilhas. Conferidos os quadros do original e da edição, incluindo extensão e flexão dos cotovelos.",
+      "reviewMethod": "Inspeção visual de sequências de quadros do original e da edição; decodificação integral e metadados conferidos."
     }
   ],
   "reference": {
@@ -374,7 +415,6 @@
   },
   "pending": [
     "Mesa flexora",
-    "Remada na máquina",
     "Flexora sentada",
     "Panturrilha com halteres"
   ],
@@ -384,6 +424,10 @@
       "sourceId": "4920810",
       "reason": "Mostra supino inclinado no Smith; não corresponde à variação com halteres do app.",
       "replacementSourceId": "39058443"
+    },
+    {
+      "source": "https://youcan-cms.shadhinarafat.workers.dev/exercises/01b05c16-bf78-4948-92a5-885d6df490e0",
+      "reason": "Weighted Seated Calf Raise mostra uma anilha apoiada nas coxas, sem halteres; não corresponde a Panturrilha com halteres."
     }
   ],
   "pendingScope": "Todos os exercícios do catálogo, incluindo alternativas às fichas padrão."

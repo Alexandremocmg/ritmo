@@ -1,2 +1,23 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),D=require('./public/training-data.js');
-test('pendências incluem todas as alternativas do catálogo e arquivos associados existem',()=>{const ctx={window:{}};vm.runInNewContext(fs.readFileSync('public/library.js','utf8'),ctx);const library=ctx.window.RITMO_VIDEO_LIBRARY,available=new Set([...Object.keys(library),'Supino com barra']),sources=JSON.parse(fs.readFileSync('public/media/fontes.json','utf8'));assert.deepEqual(sources.pending,D.CATALOG.filter(e=>!available.has(e.name)).map(e=>e.name));assert.equal(available.size,15);for(const row of Object.values(library)){assert(fs.existsSync('public/media/'+row.file));if(row.poster)assert(fs.existsSync('public/media/'+row.poster))}const curl=library['Rosca com halteres'];assert.equal(curl.variant,'Rosca com halteres em banco inclinado');assert.equal(curl.author,'YouCan (@joinyoucan)');assert.equal(curl.editedWith,'FFmpeg 9.0.2');assert.match(D.info('Rosca com halteres').cue,/banco inclinado/);const bytes=fs.readFileSync('public/media/'+curl.file);assert.equal(bytes.toString('ascii',4,8),'ftyp');const row=sources.clips.find(r=>r.file==='public/media/'+curl.file);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),row.sha256);assert.equal(row.audio,false);assert(bytes.indexOf(Buffer.from('moov'))<bytes.indexOf(Buffer.from('mdat')))});
+test('pendências incluem todas as alternativas do catálogo e arquivos associados existem',()=>{const ctx={window:{}};vm.runInNewContext(fs.readFileSync('public/library.js','utf8'),ctx);const library=ctx.window.RITMO_VIDEO_LIBRARY,available=new Set([...Object.keys(library),'Supino com barra']),sources=JSON.parse(fs.readFileSync('public/media/fontes.json','utf8'));assert.deepEqual(sources.pending,D.CATALOG.filter(e=>!available.has(e.name)).map(e=>e.name));assert.equal(available.size,16);for(const row of Object.values(library)){assert(fs.existsSync('public/media/'+row.file));if(row.poster)assert(fs.existsSync('public/media/'+row.poster))}const curl=library['Rosca com halteres'];assert.equal(curl.variant,'Rosca com halteres em banco inclinado');assert.equal(curl.author,'YouCan (@joinyoucan)');assert.equal(curl.editedWith,'FFmpeg 9.0.2');assert.match(D.info('Rosca com halteres').cue,/banco inclinado/);const bytes=fs.readFileSync('public/media/'+curl.file);assert.equal(bytes.toString('ascii',4,8),'ftyp');const row=sources.clips.find(r=>r.file==='public/media/'+curl.file);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),row.sha256);assert.equal(row.audio,false);assert(bytes.indexOf(Buffer.from('moov'))<bytes.indexOf(Buffer.from('mdat')))});
+test('remada da biblioteca preserva a procedência alternativa e a integridade do MP4',()=>{
+ const ctx={window:{}};
+ vm.runInNewContext(fs.readFileSync('public/library.js','utf8'),ctx);
+ const mapping=ctx.window.RITMO_VIDEO_LIBRARY['Remada na máquina'];
+ const sources=JSON.parse(fs.readFileSync('public/media/fontes.json','utf8'));
+ const clip=sources.clips.find(row=>row.name==='Remada na máquina');
+ assert.equal(mapping.author,'YouCan Workout Library');
+ assert.equal(mapping.sourceLabel,'Ver na biblioteca de origem');
+ assert.equal(mapping.source,clip.source);
+ assert.match(mapping.note,/vínculo oficial.*não confirmado/);
+ assert.equal(clip.officialRelationshipConfirmed,false);
+ assert.equal(clip.originalTikTokPost,null);
+ assert.equal(clip.audio,false);
+ assert.equal(clip.codec,'h264');
+ assert.equal(clip.pixelFormat,'yuv420p');
+ assert.equal(clip.frameRate,'30/1');
+ const bytes=fs.readFileSync('public/media/'+mapping.file);
+ assert.equal(bytes.toString('ascii',4,8),'ftyp');
+ assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),clip.sha256);
+ assert(bytes.indexOf(Buffer.from('moov'))<bytes.indexOf(Buffer.from('mdat')));
+});

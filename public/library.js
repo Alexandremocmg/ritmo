@@ -158,5 +158,17 @@ window.RITMO_VIDEO_LIBRARY={
     "author": "YouCan (@joinyoucan)",
     "editedWith": "FFmpeg 9.0.2",
     "duration": 4.866667
+  },
+  "Remada na máquina": {
+    "kind": "bundled",
+    "file": "youcan-library-remada-maquina.mp4",
+    "poster": "youcan-library-remada-maquina.jpg",
+    "variant": "Remada sentada na máquina com apoio para o peito",
+    "note": "Demonstração animada em máquina com alavancas. Fonte: biblioteca pública; vínculo oficial com @joinyoucan não confirmado.",
+    "source": "https://youcan-cms.shadhinarafat.workers.dev/exercises/ddbccb4b-1f63-403c-8ee4-4e4d06df05d7",
+    "sourceLabel": "Ver na biblioteca de origem",
+    "author": "YouCan Workout Library",
+    "editedWith": "FFmpeg 9.0.2",
+    "duration": 5.733333
   }
 };

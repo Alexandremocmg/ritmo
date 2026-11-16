@@ -63,3 +63,13 @@ Trecho: 19,55–24,45 s; duração exportada: 4,867 s.
 Edição: FFmpeg 9.0.2, corte, sem áudio, MP4 H.264.
 Arquivo: public/media/youcan-rosca-halteres-inclinada.mp4
 Comparativo: erros acima e execução indicada em verde abaixo.
+
+INCLUSÃO DA BIBLIOTECA PÚBLICA — REMADA NA MÁQUINA
+Variação: remada sentada na máquina com apoio para o peito.
+Fonte identificada: YouCan Workout Library.
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/ddbccb4b-1f63-403c-8ee4-4e4d06df05d7
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Back/male/Lever%20Seated%20Row.mp4
+Vínculo oficial com @joinyoucan não confirmado; publicação original no TikTok não identificada.
+Edição: FFmpeg 9.0.2; duração integral de 5,733 s, 720 × 720, 30 fps, H.264/yuv420p, sem áudio, fast start e capa.
+Arquivo: public/media/youcan-library-remada-maquina.mp4
+Movimento e equipamento conferidos por sequências de quadros do original e da edição.

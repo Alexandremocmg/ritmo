@@ -39,9 +39,11 @@ Uma atualização do aplicativo não apaga os treinos. Quando houver uma nova ve
 
 ## Vídeos
 
-Inclui **15 MP4 locais**: demonstrações para 14 exercícios e uma referência adicional de supino com barra. Os seis clipes novos do Pexels foram conferidos por sequências de quadros, cortados e otimizados em MP4 H.264.
+Inclui **16 MP4 locais**: demonstrações para 15 exercícios e uma referência adicional de supino com barra. Os seis clipes novos do Pexels foram conferidos por sequências de quadros, cortados e otimizados em MP4 H.264.
 
-Os novos vídeos cobrem supino inclinado com halteres, elevação lateral, tríceps na polia com barra curta, rosca direta com barra reta, cadeira extensora e panturrilha em pé no step. Nas fichas padrão, **mesa flexora** continua sem vídeo incluído. No catálogo de alternativas, também estão pendentes **remada na máquina, flexora sentada e panturrilha com halteres**. A rosca com halteres tem uma demonstração YouCan da variação em banco inclinado.
+Os novos vídeos cobrem supino inclinado com halteres, elevação lateral, tríceps na polia com barra curta, rosca direta com barra reta, cadeira extensora e panturrilha em pé no step. Nas fichas padrão, **mesa flexora** continua sem vídeo incluído. No catálogo de alternativas, também estão pendentes **flexora sentada e panturrilha com halteres**. A rosca com halteres tem uma demonstração YouCan da variação em banco inclinado.
+
+A remada na máquina tem demonstração animada da **YouCan Workout Library**, conferida e otimizada com FFmpeg. A página da biblioteca é identificada no player; seu vínculo oficial com @joinyoucan não foi confirmado.
 
 Autores, fontes, licenças e cortes estão em [CREDITOS-VIDEOS.txt](CREDITOS-VIDEOS.txt) e [public/media/fontes.json](public/media/fontes.json). Veja também [NOTICE.md](NOTICE.md).
 

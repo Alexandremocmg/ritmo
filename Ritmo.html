@@ -172,6 +172,18 @@ window.RITMO_VIDEO_LIBRARY={
     "author": "YouCan (@joinyoucan)",
     "editedWith": "FFmpeg 9.0.2",
     "duration": 4.866667
+  },
+  "Remada na máquina": {
+    "kind": "bundled",
+    "file": "youcan-library-remada-maquina.mp4",
+    "poster": "youcan-library-remada-maquina.jpg",
+    "variant": "Remada sentada na máquina com apoio para o peito",
+    "note": "Demonstração animada em máquina com alavancas. Fonte: biblioteca pública; vínculo oficial com @joinyoucan não confirmado.",
+    "source": "https://youcan-cms.shadhinarafat.workers.dev/exercises/ddbccb4b-1f63-403c-8ee4-4e4d06df05d7",
+    "sourceLabel": "Ver na biblioteca de origem",
+    "author": "YouCan Workout Library",
+    "editedWith": "FFmpeg 9.0.2",
+    "duration": 5.733333
   }
 };
 
@@ -320,7 +332,7 @@ async function showVideo(name,reference=false){const mapping=reference?{kind:'bu
  if(!reference)m.querySelector('#video-file').onchange=async event=>{const file=event.target.files[0];if(!file)return;if(!file.type.startsWith('video/')||file.size>150*1024*1024){toast('Escolha um vídeo de até 150 MB.');return}message.textContent='Salvando arquivo neste navegador…';try{const key=D.id();await clipStore('put',key,file);assignVideo(name,{kind:'file',id:key,name:file.name});if(generation===videoGeneration&&m.open)showVideo(name)}catch{message.textContent='Não foi possível salvar o arquivo. Verifique o espaço disponível no navegador.'}};
  if(!mapping){message.textContent='Ainda não há vídeo associado a este exercício. Escolha um arquivo ou um link correspondente.';return}
  const nativeVideo=src=>{const v=document.createElement('video');v.className='video-player';v.controls=true;v.playsInline=true;v.loop=true;v.preload='metadata';v.src=src;if(mapping.poster)v.poster=(document.documentElement.dataset.mediaBase||'media/')+mapping.poster;v.setAttribute('aria-label','Demonstração de '+name);v.onerror=()=>{message.textContent=location.protocol==='file:'?'Não foi possível reproduzir este arquivo. Mantenha a pasta public/media junto do Ritmo.html ou escolha um formato compatível.':navigator.onLine===false?'Você está offline. Conecte-se à internet para assistir aos vídeos da versão online.':'Não foi possível carregar o vídeo. Confira sua conexão e tente abri-lo novamente.'};player.append(v);return v};
- if(mapping.kind==='bundled'){nativeVideo((document.documentElement.dataset.mediaBase||'media/')+mapping.file);message.textContent=(mapping.variant||name)+'. '+(mapping.note||'')+' Fonte: '+(mapping.author||'YouCan (@joinyoucan)')+'. Edição: '+(mapping.editedWith||'OpenCut')+'.';const a=document.createElement('a');a.href=mapping.source;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Publicação original';a.style='display:block;margin-top:8px';message.append(a);if(mapping.licenseUrl){const license=document.createElement('a');license.href=mapping.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';license.textContent='Licença: '+(mapping.license||'consultar fonte');license.style='display:block;margin-top:6px';message.append(license)}}
+ if(mapping.kind==='bundled'){nativeVideo((document.documentElement.dataset.mediaBase||'media/')+mapping.file);message.textContent=(mapping.variant||name)+'. '+(mapping.note||'')+' Fonte: '+(mapping.author||'YouCan (@joinyoucan)')+'. Edição: '+(mapping.editedWith||'OpenCut')+'.';const a=document.createElement('a');a.href=mapping.source;a.target='_blank';a.rel='noopener noreferrer';a.textContent=mapping.sourceLabel||'Publicação original';a.style='display:block;margin-top:8px';message.append(a);if(mapping.licenseUrl){const license=document.createElement('a');license.href=mapping.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';license.textContent='Licença: '+(mapping.license||'consultar fonte');license.style='display:block;margin-top:6px';message.append(license)}}
  else if(mapping.kind==='file'){message.textContent='Carregando seu arquivo…';try{const file=await clipStore('get',mapping.id);if(generation!==videoGeneration||!m.open)return;if(!(file instanceof Blob)){message.textContent='O arquivo não está disponível neste navegador. Selecione-o novamente.';return}const url=URL.createObjectURL(file);nativeVideo(url);message.textContent='Arquivo salvo neste navegador · '+mapping.name;modalCleanup=()=>{videoGeneration++;URL.revokeObjectURL(url)}}catch{message.textContent='Não foi possível ler o arquivo. Selecione-o novamente.'}}
  else if(mapping.kind==='tiktok'){const frame=document.createElement('iframe');frame.src='https://www.tiktok.com/player/v1/'+mapping.id+'?controls=1&autoplay=0&loop=1&rel=0';frame.className='video-player';frame.title='Demonstração de '+name;frame.allow='fullscreen; picture-in-picture';frame.allowFullscreen=true;player.append(frame);message.textContent='Este vídeo usa o player do TikTok e precisa de internet. Se não estiver disponível, escolha um arquivo do dispositivo.';m.querySelector('#video-url').value=mapping.url}
 }
