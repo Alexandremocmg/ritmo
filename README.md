@@ -16,6 +16,15 @@ O projeto está preparado para publicação pela raiz **/** da branch **main**. 
 
 O site publica automaticamente as alterações enviadas à branch **main**. Os registros de treino continuam salvos apenas no navegador e no dispositivo utilizados.
 
+### Instalar no celular
+
+- **Android:** abra o endereço no Chrome e toque em **Instalar app**, no início ou em **Perfil → Instalar Ritmo**. Se o botão mostrar **Como instalar**, use o menu **⋮ → Instalar aplicativo** ou **Adicionar à tela inicial**.
+- **iPhone:** abra o endereço no Safari, toque em **Compartilhar → Adicionar à Tela de Início** e confirme. Se aparecer a opção **Abrir como App**, mantenha-a ativada.
+
+O ícone abre o Ritmo em uma janela própria. Após o primeiro carregamento com internet e a preparação do cache, a interface pode abrir offline. **Os vídeos da versão online precisam de conexão**; não são baixados automaticamente. No pacote local, os vídeos continuam sendo lidos da pasta `public/media`.
+
+Uma atualização do aplicativo não apaga os treinos. Quando houver uma nova versão, a opção **Atualizar app**, em Perfil, fica disponível após concluir ou descartar a sessão em andamento. O backup em Perfil permite transferir os registros entre dispositivos ou entre armazenamentos que o navegador trate separadamente.
+
 ## Recursos
 
 - Perfil inicial para hipertrofia, com meta editável de quatro treinos por semana.
@@ -48,10 +57,10 @@ Node.js 20 ou superior, sem dependências externas:
 
 ```sh
 node build.cjs
-node --test test-v3-data.cjs test-v3-regression.cjs
+node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs
 ```
 
-O build gera **public/index.html**, **Ritmo.html** e **index.html**. Edite os arquivos-fonte em **public** e gere novamente os HTML de distribuição.
+O build gera **public/index.html**, **Ritmo.html**, **index.html**, os ícones PNG e **sw.js**. Edite os arquivos-fonte em **public**, **manifest.webmanifest**, **sw.template.js** e **scripts/generate-icons.cjs** e gere novamente a distribuição. A versão do cache deriva do conteúdo dos arquivos da interface.
 
 ## Verificação
 

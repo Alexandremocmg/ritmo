@@ -1,11 +1,11 @@
 {
   "name": "ritmo",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "private": true,
   "description": "Diário de treino local com rotinas, histórico e vídeos de exercícios.",
   "scripts": {
     "build": "node build.cjs",
-    "test": "node --test test-v3-data.cjs test-v3-regression.cjs"
+    "test": "node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs"
   },
   "engines": {
     "node": ">=20"
