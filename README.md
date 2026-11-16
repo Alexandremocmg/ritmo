@@ -12,7 +12,9 @@ Também há uma entrada **index.html** na raiz para hospedagem estática. A past
 
 O projeto está preparado para publicação pela raiz **/** da branch **main**. O arquivo **.nojekyll** mantém os arquivos estáticos sem processamento do Jekyll.
 
-Endereço previsto após ativar o Pages: **https://alexandremocmg.github.io/ritmo/**.
+**[Acessar o Ritmo no celular ou computador](https://alexandremocmg.github.io/ritmo/)**
+
+O site publica automaticamente as alterações enviadas à branch **main**. Os registros de treino continuam salvos apenas no navegador e no dispositivo utilizados.
 
 ## Recursos
 
