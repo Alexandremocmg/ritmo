@@ -1,0 +1,56 @@
+RITMO — CRÉDITOS DOS VÍDEOS
+
+NOVOS CLIPES PEXELS
+Supino inclinado
+Variação: Supino inclinado com halteres
+Autor: Bennit Antony / Pexels
+Original: https://www.pexels.com/video/man-performing-dumbbell-chest-press-at-gym-39058443/
+Trecho: 4.6–17.0 s
+Edição: FFmpeg 9.0.2; corte, redimensionamento, sem áudio, MP4 H.264.
+Licença Pexels: https://www.pexels.com/license/
+
+Elevação lateral
+Variação: Elevação lateral em pé com halteres
+Autor: Tima Miroshnichenko / Pexels
+Original: https://www.pexels.com/video/a-man-working-out-using-dumbbell-5319088/
+Trecho: 8.0–20.0 s
+Edição: FFmpeg 9.0.2; corte, redimensionamento, sem áudio, MP4 H.264.
+Licença Pexels: https://www.pexels.com/license/
+
+Tríceps na polia
+Variação: Tríceps na polia alta com barra curta
+Autor: Tima Miroshnichenko / Pexels
+Original: https://www.pexels.com/pt-br/video/atleta-esportista-jogador-biceps-5319433/
+Trecho: 1.0–16.5 s
+Edição: FFmpeg 9.0.2; corte, redimensionamento, sem áudio, MP4 H.264.
+Licença Pexels: https://www.pexels.com/license/
+
+Rosca direta
+Variação: Rosca direta em pé com barra reta
+Autor: Pavel Danilyuk / Pexels
+Original: https://www.pexels.com/video/a-man-doing-biceps-curls-4367577/
+Trecho: 3.2–12.8 s
+Edição: FFmpeg 9.0.2; corte, redimensionamento, sem áudio, MP4 H.264.
+Licença Pexels: https://www.pexels.com/license/
+
+Cadeira extensora
+Variação: Extensão de joelhos na cadeira extensora
+Autor: Edu Maciel / Pexels
+Original: https://www.pexels.com/video/gym-workout-motivation-with-leg-extensions-32709558/
+Trecho: 1.9–8.7 s
+Edição: FFmpeg 9.0.2; corte, redimensionamento, sem áudio, MP4 H.264.
+Licença Pexels: https://www.pexels.com/license/
+
+Panturrilha
+Variação: Elevação de panturrilhas em pé no step
+Autor: Gaurav Kumar / Pexels
+Original: https://www.pexels.com/video/intense-calf-workout-in-gym-setting-32115656/
+Trecho: 9.8–22.0 s
+Edição: FFmpeg 9.0.2; corte, redimensionamento, sem áudio, MP4 H.264.
+Licença Pexels: https://www.pexels.com/license/
+
+CLIPES ANTERIORES
+YouCan (@joinyoucan), edição anterior no OpenCut. Fontes por clipe: public/media/fontes.json.
+
+O uso dos clipes não indica endosso dos autores ou das pessoas retratadas ao Ritmo.
+As variações foram identificadas por inspeção visual dos quadros; isso não certifica a técnica de execução nem substitui orientação individual.

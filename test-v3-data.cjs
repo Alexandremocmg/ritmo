@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),D=require('./public/training-data.js');
+const state=D.initial(),now=Date.now();assert.equal(state.schemaVersion,3);assert.equal(state.profile.weeklyGoal,4);
+const old=D.clone(state);old.schemaVersion=2;delete old.folders;delete old.profile.theme;assert.equal(D.validate(old).schemaVersion,3);assert.deepEqual(D.validate(old).folders,[]);
+const p={id:'typed',name:'Tipos',exercises:[{...D.prescription('Supino com halteres',3),setTypes:['warmup','normal','normal']}]};
+const s=D.startSession(state,p,now-60000);s.exercises[0].sets.forEach((row,i)=>Object.assign(row,{weight:i?20:100,reps:12,done:true}));state.history=[D.normalizeCompleted(s,now)];
+assert.equal(D.volume(s),480);assert.equal(D.weeklyStats(state,now).groups.Peito,2);assert.equal(D.records(state,'Supino com halteres').maxWeight,20);assert.equal(D.progression(state,p.exercises[0]).eligible,true);
+const current=[{type:'normal'},{type:'warmup'},{type:'normal'}],previous=D.lastExercise(state,'Supino com halteres');assert.equal(D.previousSet(previous,0,current).weight,20);assert.equal(D.previousSet(previous,1,current).weight,100);
+previous.sets[1].done=false;assert.equal(D.previousSet(previous,0,current),null);assert.equal(D.previousSet(previous,2,current).weight,20);
+state.history[0].exercises[0].sets[1].type='drop';assert.equal(D.progression(state,p.exercises[0]).eligible,false);
+state.session={id:'free',name:'Treino livre',started:now,exercises:[]};assert.doesNotThrow(()=>D.validate(state));const bad=D.clone(state);bad.history.push({...bad.session,ended:now});assert.throws(()=>D.validate(bad));
+state.folders=[{id:'folder',name:'Superiores'}];state.plans[0].folderId='folder';assert.doesNotThrow(()=>D.validate(state));state.plans[0].folderId='missing';assert.throws(()=>D.validate(state));state.plans[0].folderId='';state.profile.theme='bad';assert.throws(()=>D.validate(state));
+const invalid=D.initial();invalid.plans[0].exercises[0].setTypes=['warmup'];assert.throws(()=>D.validate(invalid));
+console.log('V3: migração, tipos de série, métricas, progressão, treino livre e validação aprovados.');

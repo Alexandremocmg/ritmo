@@ -1,0 +1,59 @@
+RITMO V3.1 — DIÁRIO DE TREINO
+
+PARA ABRIR
+Extraia TODO o ZIP para uma pasta e abra Ritmo.html no navegador.
+Mantenha public/media junto ao HTML, na estrutura incluída no pacote.
+Os 14 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
+
+MELHORIAS INSPIRADAS NOS RECURSOS PÚBLICOS DO HEVY
+- Interface com destaque azul, cartões de rotinas e temas claro e escuro.
+- Pastas de rotinas com busca, renomeação, exclusão e atribuição por rotina.
+- Treino livre, além dos treinos iniciados por uma rotina.
+- Adicionar, reordenar ou remover exercícios durante a sessão.
+- Adicionar e remover séries sem modificar a rotina original.
+- Etiquetas normal, aquecimento (W), drop (D) e falha (F), por série.
+- Tipos de série também configuráveis nos modelos de rotina.
+- Toque no valor anterior para copiar carga e repetições, sem marcar a série como concluída.
+- Histórico por exercício com gráfico de carga de trabalho e registros detalhados.
+- Calendário mensal com consulta dos treinos registrados em cada dia.
+- Detalhes de cada treino, repetição da sessão e salvamento como nova rotina.
+- Duração ao vivo, descanso e retomada da sessão salva.
+
+REGRAS DOS REGISTROS
+Aquecimentos ficam fora do volume de trabalho, dos recordes e das séries diretas por grupo muscular. A carga do gráfico também exclui aquecimentos.
+A comparação anterior respeita o tipo e a posição da série dentro desse tipo. Uma série anterior não concluída não é copiada.
+Drop e falha são etiquetas descritivas escolhidas por você. Elas não constituem uma recomendação automática. O descanso automático é dispensado quando a próxima série é um drop set.
+A sugestão de progressão é manualmente aplicável e exige séries de trabalho completas, mesma carga positiva e topo da faixa de repetições na sessão anterior. Sessões com drop ou falha não geram essa sugestão. Aquecimentos não recebem a carga sugerida.
+Rotinas aceitam até 10 séries por exercício; a sessão aceita séries adicionais. Ao salvar um treino maior como rotina, revise o limite de 10 séries mostrado na prévia.
+Repetir um treino cria uma sessão nova sem concluir séries automaticamente. Havendo uma sessão em andamento, o app retoma essa sessão.
+
+DADOS E BACKUP
+Objetivo inicial: hipertrofia; meta: quatro treinos por semana. As rotinas iniciais são exemplos editáveis.
+O app migra as versões 1 e 2 para a versão 3 e mantém os registros antigos no armazenamento do navegador. O backup JSON inclui rotinas, pastas, tipos de série, tema, histórico e preferências.
+Abra o mesmo Ritmo.html no mesmo navegador para preservar a continuidade dos dados locais. Mudar de pasta, navegador ou dispositivo pode exigir exportar e restaurar o backup em Perfil. Arquivos de vídeo pessoais são guardados separadamente no navegador e não são embutidos no JSON.
+Não são inseridos treinos fictícios no histórico.
+
+VÍDEOS INCLUÍDOS
+13 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 14 MP4.
+Os oito arquivos anteriores de YouCan foram preservados. Fonte: @joinyoucan. Edição anterior: OpenCut.
+Novos seis clipes Pexels: Supino inclinado, Elevação lateral, Tríceps na polia, Rosca direta, Cadeira extensora, Panturrilha.
+Apenas Mesa flexora continua sem vídeo.
+Os seis novos vídeos foram baixados, conferidos por sequências de quadros, cortados e exportados em H.264/yuv420p, 30 fps, sem áudio e com fast start. Mantida a proporção original, em 720 × 1280 ou 1280 × 720, sem alterar a velocidade. Foram criadas capas para esses clipes.
+A variação do supino inclinado foi conferida com halteres; o candidato no Smith foi descartado. Panturrilha mostra a variação em pé no step, em close das pernas e pés. Rosca direta usa barra reta; tríceps na polia usa barra curta. Os clipes são referências visuais de banco de imagens, sem certificação da execução individual.
+Créditos, licença Pexels, origem, intervalos dos cortes e hashes: public/media/fontes.json. Os autores são identificados no player. Licença: https://www.pexels.com/license/
+
+
+ESCOPO
+Aplicativo local, sem conta ou sincronização com Hevy. Não utiliza marca, código ou imagens do Hevy. O histórico é pessoal; não há uma rede social conectada.
+Coach utiliza regras locais; não há IA externa ou dispositivo de saúde conectado. Os gráficos usam apenas seus registros.
+
+VERIFICAÇÃO DESTA ATUALIZAÇÃO
+Passaram os testes Node de migração v1/v2, validação de backup, volume e recordes sem aquecimento, séries anteriores por tipo, progressão, treino livre, pastas, temas, reordenação, cópia de séries, repetição e calendário nos controladores.
+O Craft Anything 0.6.0 foi utilizado para análise estática. Isso não substitui testes funcionais.
+Os testes de navegador foram preparados, mas a política administrativa do Windows bloqueou a automação do Edge. Não foi possível repetir a inspeção visual responsiva nem a reprodução dos vídeos nesta atualização. Os oito MP4 anteriores foram preservados. Os seis novos passaram por inspeção visual de sequências de quadros, sondagem de formato, decodificação integral e conferência de integridade. A reprodução dentro do navegador permanece sem revalidação devido à política do Windows.
+
+REFERÊNCIAS DE PRODUTO
+https://www.hevyapp.com/features/gym-routines/
+https://www.hevyapp.com/features/track-workouts/
+https://www.hevyapp.com/features/exercise-library/
+https://www.hevyapp.com/features/workout-set-types/

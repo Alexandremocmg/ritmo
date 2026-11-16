@@ -1,0 +1,12 @@
+const fs=require('node:fs');
+const tags=['library.js','training-data.js','ritmo-app.js','ritmo-actions.js','ritmo-v3.js','ritmo-v3-actions.js'];
+const styles=['ritmo.css','ritmo-v3.css'];
+let html=fs.readFileSync('public/index-v2.html','utf8').replace('#16271f','#287bfa').replace('Ritmo — seu treino aprende com você','Ritmo — seu diário de treino');
+html=html.replace('<link rel="stylesheet" href="ritmo.css">',styles.map(n=>`<link rel="stylesheet" href="${n}">`).join(''));
+html=html.replace(/<script src="(?:library|training-data|ritmo-app)\.js"><\/script>/g,'').replace('</body>',tags.map(n=>`<script src="${n}"></script>`).join('')+'</body>');
+fs.writeFileSync('public/index.html',html);
+let standalone=html.replace('<html lang="pt-BR">','<html lang="pt-BR" data-media-base="public/media/">');
+for(const name of styles)standalone=standalone.replace(`<link rel="stylesheet" href="${name}">`,()=>'<style>'+fs.readFileSync('public/'+name,'utf8')+'</style>');
+for(const name of tags)standalone=standalone.replace(`<script src="${name}"></script>`,'');
+standalone=standalone.replace('</body>',()=>'<script>'+tags.map(n=>fs.readFileSync('public/'+n,'utf8')).join('\n')+'</script></body>');
+fs.writeFileSync('Ritmo.html',standalone);fs.writeFileSync('index.html',standalone);console.log('Ritmo v3 gerado, com vídeos locais preservados.');
