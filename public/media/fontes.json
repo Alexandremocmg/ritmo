@@ -341,6 +341,28 @@
       "reviewFrames": "media-pexels/reviews/edited-panturrilha.png",
       "provider": "Pexels",
       "reviewMethod": "Inspeção visual de sequências de quadros do original e da edição; identificação do movimento e da variação, sem certificação técnica."
+    },
+    {
+      "name": "Rosca com halteres",
+      "variant": "Rosca com halteres em banco inclinado",
+      "sourceId": "7701832936428997902",
+      "source": "https://www.tiktok.com/@joinyoucan/video/7701832936428997902",
+      "author": "YouCan (@joinyoucan)",
+      "provider": "YouCan",
+      "file": "public/media/youcan-rosca-halteres-inclinada.mp4",
+      "poster": "public/media/youcan-rosca-halteres-inclinada.jpg",
+      "start": 19.55,
+      "end": 24.45,
+      "duration": 4.866667,
+      "editedWith": "FFmpeg 9.0.2",
+      "format": "mp4",
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "bytes": 222934,
+      "sha256": "da2dfb78e1d482f039588307f9711ba329322900d607cf0cfe390a0af66ec419",
+      "note": "Comparativo do autor: a metade superior mostra erros e a inferior, a execução destacada em verde. A variação é sentada em banco inclinado.",
+      "reviewMethod": "Inspeção visual de sequências de quadros do original e da edição; decodificação integral e metadados conferidos."
     }
   ],
   "reference": {
@@ -351,7 +373,10 @@
     "editedWith": "OpenCut web v0.3.0"
   },
   "pending": [
-    "Mesa flexora"
+    "Mesa flexora",
+    "Remada na máquina",
+    "Flexora sentada",
+    "Panturrilha com halteres"
   ],
   "rejectedCandidates": [
     {
@@ -360,5 +385,6 @@
       "reason": "Mostra supino inclinado no Smith; não corresponde à variação com halteres do app.",
       "replacementSourceId": "39058443"
     }
-  ]
+  ],
+  "pendingScope": "Todos os exercícios do catálogo, incluindo alternativas às fichas padrão."
 }

@@ -39,9 +39,9 @@ Uma atualização do aplicativo não apaga os treinos. Quando houver uma nova ve
 
 ## Vídeos
 
-Inclui **14 MP4 locais**: demonstrações para 13 exercícios e uma referência adicional de supino com barra. Os seis clipes novos do Pexels foram conferidos por sequências de quadros, cortados e otimizados em MP4 H.264.
+Inclui **15 MP4 locais**: demonstrações para 14 exercícios e uma referência adicional de supino com barra. Os seis clipes novos do Pexels foram conferidos por sequências de quadros, cortados e otimizados em MP4 H.264.
 
-Os novos vídeos cobrem supino inclinado com halteres, elevação lateral, tríceps na polia com barra curta, rosca direta com barra reta, cadeira extensora e panturrilha em pé no step. **Mesa flexora continua sem vídeo incluído.**
+Os novos vídeos cobrem supino inclinado com halteres, elevação lateral, tríceps na polia com barra curta, rosca direta com barra reta, cadeira extensora e panturrilha em pé no step. Nas fichas padrão, **mesa flexora** continua sem vídeo incluído. No catálogo de alternativas, também estão pendentes **remada na máquina, flexora sentada e panturrilha com halteres**. A rosca com halteres tem uma demonstração YouCan da variação em banco inclinado.
 
 Autores, fontes, licenças e cortes estão em [CREDITOS-VIDEOS.txt](CREDITOS-VIDEOS.txt) e [public/media/fontes.json](public/media/fontes.json). Veja também [NOTICE.md](NOTICE.md).
 
@@ -57,7 +57,7 @@ Node.js 20 ou superior, sem dependências externas:
 
 ```sh
 node build.cjs
-node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs
+node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs
 ```
 
 O build gera **public/index.html**, **Ritmo.html**, **index.html**, os ícones PNG e **sw.js**. Edite os arquivos-fonte em **public**, **manifest.webmanifest**, **sw.template.js** e **scripts/generate-icons.cjs** e gere novamente a distribuição. A versão do cache deriva do conteúdo dos arquivos da interface.

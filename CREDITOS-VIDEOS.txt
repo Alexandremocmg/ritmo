@@ -54,3 +54,12 @@ YouCan (@joinyoucan), edição anterior no OpenCut. Fontes por clipe: public/med
 
 O uso dos clipes não indica endosso dos autores ou das pessoas retratadas ao Ritmo.
 As variações foram identificadas por inspeção visual dos quadros; isso não certifica a técnica de execução nem substitui orientação individual.
+
+INCLUSÃO YOUCAN — ROSCA COM HALTERES
+Variação: sentada em banco inclinado.
+Fonte: https://www.tiktok.com/@joinyoucan/video/7701832936428997902
+Autor: YouCan (@joinyoucan).
+Trecho: 19,55–24,45 s; duração exportada: 4,867 s.
+Edição: FFmpeg 9.0.2, corte, sem áudio, MP4 H.264.
+Arquivo: public/media/youcan-rosca-halteres-inclinada.mp4
+Comparativo: erros acima e execução indicada em verde abaixo.

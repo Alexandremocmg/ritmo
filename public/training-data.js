@@ -17,7 +17,7 @@ const CATALOG=[
  ['panturrilha','Panturrilha','Panturrilhas',[],'Máquina','flexao-plantar','Especifique a variação usada: sentada, em pé ou na máquina.','Evite comparar cargas entre variações diferentes.'],
  ['supino-barra','Supino com barra','Peito',['Tríceps','Ombros'],'Barra','empurrar-horizontal','Registre a carga total, incluindo a barra, se esse for seu critério habitual.','Evite mudar o critério de carga entre sessões.'],
  ['remada-maquina','Remada na máquina','Costas',['Bíceps'],'Máquina','puxar-horizontal','Anote o modelo da máquina e a pegada.','Cargas de máquinas diferentes não são diretamente comparáveis.'],
- ['rosca-halteres','Rosca com halteres','Bíceps',[],'Halteres','flexao-cotovelo','Registre a carga de um halter.','Evite usar impulso.'],
+ ['rosca-halteres','Rosca com halteres','Bíceps',[],'Halteres','flexao-cotovelo','O vídeo mostra a variação em banco inclinado. Registre a carga por halter e a variação usada.','Evite usar impulso.'],
  ['flexora-sentada','Flexora sentada','Posterior de coxa',[],'Máquina','flexao-joelho','Anote a regulagem e trate esta variação como um exercício diferente no histórico.','Não transfira automaticamente a carga da mesa flexora.'],
  ['panturrilha-halter','Panturrilha com halteres','Panturrilhas',[],'Halteres','flexao-plantar','Registre a carga e se o movimento é feito com uma ou duas pernas.','Não compare diretamente com máquinas.']
 ].map(([id,name,primary,secondary,equipment,pattern,cue,mistake])=>({id,name,primary,secondary,equipment,pattern,cue,mistake}));

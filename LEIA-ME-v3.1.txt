@@ -3,7 +3,7 @@ RITMO V3.1 — DIÁRIO DE TREINO
 PARA ABRIR
 Extraia TODO o ZIP para uma pasta e abra Ritmo.html no navegador.
 Mantenha public/media junto ao HTML, na estrutura incluída no pacote.
-Os 14 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
+Os 15 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
 
 MELHORIAS INSPIRADAS NOS RECURSOS PÚBLICOS DO HEVY
 - Interface com destaque azul, cartões de rotinas e temas claro e escuro.
@@ -34,10 +34,11 @@ Abra o mesmo Ritmo.html no mesmo navegador para preservar a continuidade dos dad
 Não são inseridos treinos fictícios no histórico.
 
 VÍDEOS INCLUÍDOS
-13 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 14 MP4.
+14 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 15 MP4.
 Os oito arquivos anteriores de YouCan foram preservados. Fonte: @joinyoucan. Edição anterior: OpenCut.
 Novos seis clipes Pexels: Supino inclinado, Elevação lateral, Tríceps na polia, Rosca direta, Cadeira extensora, Panturrilha.
-Apenas Mesa flexora continua sem vídeo.
+Nas fichas padrão, Mesa flexora continua sem vídeo. Incluindo as alternativas do catálogo, também estão pendentes Remada na máquina, Flexora sentada e Panturrilha com halteres.
+Rosca com halteres agora inclui a variação sentada em banco inclinado, encontrada na compilação YouCan de origem 7701832936428997902, recortada de 19,55 a 24,45 segundos e editada com FFmpeg 9.0.2. O comparativo mostra erros acima e a execução indicada em verde abaixo.
 Os seis novos vídeos foram baixados, conferidos por sequências de quadros, cortados e exportados em H.264/yuv420p, 30 fps, sem áudio e com fast start. Mantida a proporção original, em 720 × 1280 ou 1280 × 720, sem alterar a velocidade. Foram criadas capas para esses clipes.
 A variação do supino inclinado foi conferida com halteres; o candidato no Smith foi descartado. Panturrilha mostra a variação em pé no step, em close das pernas e pés. Rosca direta usa barra reta; tríceps na polia usa barra curta. Os clipes são referências visuais de banco de imagens, sem certificação da execução individual.
 Créditos, licença Pexels, origem, intervalos dos cortes e hashes: public/media/fontes.json. Os autores são identificados no player. Licença: https://www.pexels.com/license/

@@ -147,5 +147,16 @@ window.RITMO_VIDEO_LIBRARY={
     "duration": 12.2,
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/"
+  },
+  "Rosca com halteres": {
+    "kind": "bundled",
+    "file": "youcan-rosca-halteres-inclinada.mp4",
+    "poster": "youcan-rosca-halteres-inclinada.jpg",
+    "variant": "Rosca com halteres em banco inclinado",
+    "note": "Comparativo do autor: a metade superior mostra erros e a inferior, a execução destacada em verde. A variação é sentada em banco inclinado.",
+    "source": "https://www.tiktok.com/@joinyoucan/video/7701832936428997902",
+    "author": "YouCan (@joinyoucan)",
+    "editedWith": "FFmpeg 9.0.2",
+    "duration": 4.866667
   }
 };
