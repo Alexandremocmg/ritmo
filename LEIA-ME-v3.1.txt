@@ -61,3 +61,6 @@ https://www.hevyapp.com/features/workout-set-types/
 
 REMADA NA MÁQUINA — BIBLIOTECA ALTERNATIVA
 Incluída a demonstração Lever Seated Row da YouCan Workout Library, com apoio para o peito e alavancas. Fonte identificada no player. Vínculo oficial com @joinyoucan não confirmado. Conferência por quadros e edição FFmpeg 9.0.2, sem áudio, H.264, 30 fps, com capa e fast start.
+
+CATÁLOGO V3.3
+46 exercícios de musculação e 9 atividades de cardio. Acrescentados 27 exercícios sem repetir os 9 movimentos equivalentes já cadastrados. Busca por nomes equivalentes, sem distinguir acentos. As rotinas e os históricos anteriores mantêm os nomes originais. As novas entradas ainda não têm vídeos incluídos. No mergulho assistido, registre kg de assistência; não há progressão automática, recorde de carga, 1RM ou volume em kg para essa assistência.

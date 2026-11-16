@@ -1,6 +1,6 @@
 'use strict';
 const CACHE_PREFIX='ritmo-shell:'+self.registration.scope+':';
-const CACHE_NAME=CACHE_PREFIX+'e7ae2ef3c21d011b';
+const CACHE_NAME=CACHE_PREFIX+'3010108299eafeb8';
 const SHELL=["./","./index.html","./Ritmo.html","./public/index.html","./manifest.webmanifest","./public/library.js","./public/training-data.js","./public/ritmo-app.js","./public/ritmo-actions.js","./public/ritmo-v3.js","./public/ritmo-v3-actions.js","./public/pwa.js","./public/ritmo.css","./public/ritmo-v3.css","./public/pwa.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon.svg","./icons/maskable-512.png"].map(file=>new URL(file,self.registration.scope).href);
 const SHELL_URLS=new Set(SHELL);
 self.addEventListener('install',event=>{

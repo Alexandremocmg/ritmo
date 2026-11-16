@@ -47,6 +47,14 @@ A remada na máquina tem demonstração animada da **YouCan Workout Library**, c
 
 Autores, fontes, licenças e cortes estão em [CREDITOS-VIDEOS.txt](CREDITOS-VIDEOS.txt) e [public/media/fontes.json](public/media/fontes.json). Veja também [NOTICE.md](NOTICE.md).
 
+## Catálogo ampliado
+
+O catálogo contém **46 exercícios de musculação** e **9 atividades de cardio**. A lista solicitada tinha 42 itens: 36 de musculação e 6 de cardio. Nove movimentos de musculação já estavam cadastrados; foram acrescentados 27, mantendo nomes e registros anteriores. Sinônimos como “cadeira flexora”, “flexão de joelho sentado”, “Chest Press” e “Tríceps pulley” são reconhecidos na busca. Ao adicionar pelo nome equivalente, o app usa a entrada já cadastrada.
+
+Versões em máquina, halteres, Smith e polia têm entradas próprias quando representam variações diferentes. Os novos exercícios aparecem na biblioteca e nos seletores das rotinas e do treino livre. As seis atividades solicitadas aparecem na seção Cardio da biblioteca e em Registrar cardio. Os exercícios novos ainda não têm vídeos incluídos; os 16 MP4 anteriores foram preservados.
+
+No mergulho assistido, os kg representam assistência. O app não sugere aumento automático, nem calcula volume em kg, recordes de carga ou 1RM para esse movimento. As séries continuam contando para o grupo muscular.
+
 ## Dados pessoais
 
 O app não possui servidor de contas nem sincronização em nuvem. Os registros ficam no navegador e no dispositivo utilizados; exporte um backup em **Perfil** para transferi-los. Vídeos pessoais adicionados pelo usuário ficam separados do backup JSON. Nenhum registro pessoal de treino ou arquivo de credenciais acompanha este repositório.
@@ -59,7 +67,7 @@ Node.js 20 ou superior, sem dependências externas:
 
 ```sh
 node build.cjs
-node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs
+node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs test-catalog.cjs
 ```
 
 O build gera **public/index.html**, **Ritmo.html**, **index.html**, os ícones PNG e **sw.js**. Edite os arquivos-fonte em **public**, **manifest.webmanifest**, **sw.template.js** e **scripts/generate-icons.cjs** e gere novamente a distribuição. A versão do cache deriva do conteúdo dos arquivos da interface.
