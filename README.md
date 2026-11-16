@@ -8,6 +8,12 @@ Baixe este repositório pelo botão **Code → Download ZIP**, extraia toda a pa
 
 Também há uma entrada **index.html** na raiz para hospedagem estática. A pasta **public** contém a versão com HTML, JavaScript e CSS separados.
 
+### GitHub Pages
+
+O projeto está preparado para publicação pela raiz **/** da branch **main**. O arquivo **.nojekyll** mantém os arquivos estáticos sem processamento do Jekyll.
+
+Endereço previsto após ativar o Pages: **https://alexandremocmg.github.io/ritmo/**.
+
 ## Recursos
 
 - Perfil inicial para hipertrofia, com meta editável de quatro treinos por semana.
