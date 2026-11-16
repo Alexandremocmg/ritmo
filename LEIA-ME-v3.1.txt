@@ -3,7 +3,7 @@ RITMO V3.1 — DIÁRIO DE TREINO
 PARA ABRIR
 Extraia TODO o ZIP para uma pasta e abra Ritmo.html no navegador.
 Mantenha public/media junto ao HTML, na estrutura incluída no pacote.
-Os 16 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
+Os 26 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
 
 MELHORIAS INSPIRADAS NOS RECURSOS PÚBLICOS DO HEVY
 - Interface com destaque azul, cartões de rotinas e temas claro e escuro.
@@ -34,7 +34,7 @@ Abra o mesmo Ritmo.html no mesmo navegador para preservar a continuidade dos dad
 Não são inseridos treinos fictícios no histórico.
 
 VÍDEOS INCLUÍDOS
-15 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 16 MP4.
+25 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 26 MP4.
 Os oito arquivos anteriores de YouCan foram preservados. Fonte: @joinyoucan. Edição anterior: OpenCut.
 Novos seis clipes Pexels: Supino inclinado, Elevação lateral, Tríceps na polia, Rosca direta, Cadeira extensora, Panturrilha.
 Nas fichas padrão, Mesa flexora continua sem vídeo. Incluindo as alternativas do catálogo, também estão pendentes Flexora sentada e Panturrilha com halteres.
@@ -63,4 +63,17 @@ REMADA NA MÁQUINA — BIBLIOTECA ALTERNATIVA
 Incluída a demonstração Lever Seated Row da YouCan Workout Library, com apoio para o peito e alavancas. Fonte identificada no player. Vínculo oficial com @joinyoucan não confirmado. Conferência por quadros e edição FFmpeg 9.0.2, sem áudio, H.264, 30 fps, com capa e fast start.
 
 CATÁLOGO V3.3
-46 exercícios de musculação e 9 atividades de cardio. Acrescentados 27 exercícios sem repetir os 9 movimentos equivalentes já cadastrados. Busca por nomes equivalentes, sem distinguir acentos. As rotinas e os históricos anteriores mantêm os nomes originais. As novas entradas ainda não têm vídeos incluídos. No mergulho assistido, registre kg de assistência; não há progressão automática, recorde de carga, 1RM ou volume em kg para essa assistência.
+46 exercícios de musculação e 9 atividades de cardio. Acrescentados 27 exercícios sem repetir os 9 movimentos equivalentes já cadastrados. Busca por nomes equivalentes, sem distinguir acentos. As rotinas e os históricos anteriores mantêm os nomes originais. Dez das novas entradas têm vídeo incluído; as demais 17 seguem pendentes. No mergulho assistido, registre kg de assistência; não há progressão automática, recorde de carga, 1RM ou volume em kg para essa assistência.
+
+DEZ VÍDEOS NOVOS — BIBLIOTECA YOUCAN
+Supino na máquina — Supino sentado na máquina com alavancas
+Supino inclinado na máquina — Supino inclinado na máquina com alavancas
+Crucifixo na máquina — Crucifixo no Peck Deck com apoio para os antebraços
+Crossover — Crossover em pé nas polias altas
+Remada no Smith — Remada curvada no Smith
+Rosca Scott na máquina — Rosca Scott na máquina com apoio para os braços
+Abdominal na máquina — Abdominal sentado na máquina com alavancas
+Elevação de pernas — Elevação de pernas estendidas na Captain’s Chair
+Rosca na polia — Rosca em pé na polia baixa com barra curta
+Tríceps corda — Tríceps na polia alta com corda
+Fonte: YouCan Workout Library, com vínculo oficial com @joinyoucan não confirmado. Origem, cortes, conferência visual e hashes em public/media/fontes.json. Os 16 vídeos anteriores foram mantidos. Total: 26 MP4; 20 exercícios ainda sem vídeo no catálogo completo.

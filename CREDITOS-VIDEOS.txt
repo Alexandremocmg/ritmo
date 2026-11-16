@@ -73,3 +73,96 @@ Vínculo oficial com @joinyoucan não confirmado; publicação original no TikTo
 Edição: FFmpeg 9.0.2; duração integral de 5,733 s, 720 × 720, 30 fps, H.264/yuv420p, sem áudio, fast start e capa.
 Arquivo: public/media/youcan-library-remada-maquina.mp4
 Movimento e equipamento conferidos por sequências de quadros do original e da edição.
+
+DEZ DEMONSTRAÇÕES DO CATÁLOGO AMPLIADO
+Fonte: YouCan Workout Library. Vínculo oficial com @joinyoucan não confirmado; publicações originais no TikTok não identificadas.
+
+Supino na máquina
+Variação: Supino sentado na máquina com alavancas
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/42b8aafa-caa8-4572-8b35-46234c274ce3
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Chest/male/Lever%20Chest%20Press.mp4
+Trecho: 0–5.6 s; duração exportada: 5.6 s.
+Arquivo: public/media/youcan-library-supino-maquina.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Banco com encosto, puxadores bilaterais e alavancas carregadas com anilhas; extensão e retorno dos cotovelos.
+
+Supino inclinado na máquina
+Variação: Supino inclinado na máquina com alavancas
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/d93acb5f-8546-4e9d-a81c-a6fd67bdf78d
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Chest/male/Lever%20Incline%20Chest%20Press.mp4
+Trecho: 0–5.733333 s; duração exportada: 5.733333 s.
+Arquivo: public/media/youcan-library-supino-inclinado-maquina.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Banco inclinado, alavancas e anilhas visíveis; movimento de empurrar na diagonal.
+
+Crucifixo na máquina
+Variação: Crucifixo no Peck Deck com apoio para os antebraços
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/883396ed-584a-4e01-9f85-2f533a1351a6
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Chest/male/Lever%20Pec%20Deck%20Fly.mp4
+Trecho: 0–5.766667 s; duração exportada: 5.766667 s.
+Arquivo: public/media/youcan-library-crucifixo-maquina.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Pessoa sentada, antebraços apoiados e fechamento e abertura bilateral das alavancas à frente do peito.
+
+Crossover
+Variação: Crossover em pé nas polias altas
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/236052d3-86b2-4e4f-af71-ec030a9eac6d
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Chest/male/Cable%20Crossover.mp4
+Trecho: 0–5.666667 s; duração exportada: 5.666667 s.
+Arquivo: public/media/youcan-library-crossover.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Dois cabos vindos de polias altas, adução bilateral dos braços à frente do corpo e retorno.
+
+Remada no Smith
+Variação: Remada curvada no Smith
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/fad94a72-844d-400e-8784-6008f0749da1
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Back/male/Smith-Bent-Over-Row.mp4
+Trecho: 0–6.066667 s; duração exportada: 6.066667 s.
+Arquivo: public/media/youcan-library-remada-smith.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Tronco inclinado e barra ligada às guias verticais da máquina, com puxada e retorno em remada.
+
+Rosca Scott na máquina
+Variação: Rosca Scott na máquina com apoio para os braços
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/c0e3300a-143e-47c1-96d8-56f9844baf56
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Biceps/male/Lever%20Bicep%20Curl.mp4
+Trecho: 0–5.733333 s; duração exportada: 5.733333 s.
+Arquivo: public/media/youcan-library-rosca-scott-maquina.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Braços apoiados no banco Scott e flexão dos cotovelos contra alavanca com anilhas. Não associado à entrada genérica de outra máquina de bíceps.
+
+Abdominal na máquina
+Variação: Abdominal sentado na máquina com alavancas
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/33bdbe17-8ec1-41b8-afa1-9cc290c3724f
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Abs/male/Lever%20Seated%20Crunch.mp4
+Trecho: 0–5.633333 s; duração exportada: 5.633333 s.
+Arquivo: public/media/youcan-library-abdominal-maquina.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Pessoa sentada, puxadores acima dos ombros e flexão e retorno do tronco em aparelho com alavancas.
+
+Elevação de pernas
+Variação: Elevação de pernas estendidas na Captain’s Chair
+Página: https://youcan-cms.shadhinarafat.workers.dev/exercises/bed06906-bd3f-4614-95c3-0ab772c93fdb
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/by_category/Abs/male/Captains%20Chair%20Straight%20Leg%20Raise.mp4
+Trecho: 0–6.066667 s; duração exportada: 6.066667 s.
+Arquivo: public/media/youcan-library-elevacao-pernas.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Antebraços e costas apoiados na cadeira, pernas suspensas e elevação e retorno bilateral das pernas estendidas.
+
+Rosca na polia
+Variação: Rosca em pé na polia baixa com barra curta
+Página: https://youcan-cms.shadhinarafat.workers.dev/social
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/22.mp4
+Trecho: 0–8 s; duração exportada: 8 s.
+Arquivo: public/media/youcan-library-rosca-polia.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Cabo vindo da polia baixa, barra curta, pegada supinada e ciclos de flexão e extensão dos cotovelos em pé. Excluída a variação seguinte com outra pegada.
+
+Tríceps corda
+Variação: Tríceps na polia alta com corda
+Página: https://youcan-cms.shadhinarafat.workers.dev/social
+Arquivo de origem: https://youcan-cms.shadhinarafat.workers.dev/media/82.mp4
+Trecho: 13.5–24.8 s; duração exportada: 11.3 s.
+Arquivo: public/media/youcan-library-triceps-corda.mp4
+Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Polia alta, corda nas mãos e extensão e retorno dos cotovelos. Selecionada somente a parte marcada em verde pelo autor; excluída a parte inicial marcada em vermelho.
