@@ -39,9 +39,9 @@ Uma atualização do aplicativo não apaga os treinos. Quando houver uma nova ve
 
 ## Vídeos
 
-Inclui **26 MP4 locais**: demonstrações para 25 exercícios e uma referência adicional de supino com barra. Os seis clipes novos do Pexels foram conferidos por sequências de quadros, cortados e otimizados em MP4 H.264.
+Inclui **35 MP4 locais**: demonstrações para 34 exercícios e uma referência adicional de supino com barra. Os clipes do Pexels foram conferidos por sequências de quadros, cortados e otimizados em MP4 H.264.
 
-Os novos vídeos cobrem supino inclinado com halteres, elevação lateral, tríceps na polia com barra curta, rosca direta com barra reta, cadeira extensora e panturrilha em pé no step. Nas fichas padrão, **mesa flexora** continua sem vídeo incluído. No catálogo de alternativas, também estão pendentes **flexora sentada e panturrilha com halteres**. A rosca com halteres tem uma demonstração YouCan da variação em banco inclinado.
+Os vídeos incluem demonstrações animadas e filmadas, com o aparelho e a variação identificados no player. Mesa flexora e flexora sentada agora têm vídeos distintos. Panturrilha com halteres continua sem correspondência confirmada.
 
 A remada na máquina tem demonstração animada da **YouCan Workout Library**, conferida e otimizada com FFmpeg. A página da biblioteca é identificada no player; seu vínculo oficial com @joinyoucan não foi confirmado.
 
@@ -51,7 +51,7 @@ Autores, fontes, licenças e cortes estão em [CREDITOS-VIDEOS.txt](CREDITOS-VID
 
 O catálogo contém **46 exercícios de musculação** e **9 atividades de cardio**. A lista solicitada tinha 42 itens: 36 de musculação e 6 de cardio. Nove movimentos de musculação já estavam cadastrados; foram acrescentados 27, mantendo nomes e registros anteriores. Sinônimos como “cadeira flexora”, “flexão de joelho sentado”, “Chest Press” e “Tríceps pulley” são reconhecidos na busca. Ao adicionar pelo nome equivalente, o app usa a entrada já cadastrada.
 
-Versões em máquina, halteres, Smith e polia têm entradas próprias quando representam variações diferentes. Os novos exercícios aparecem na biblioteca e nos seletores das rotinas e do treino livre. As seis atividades solicitadas aparecem na seção Cardio da biblioteca e em Registrar cardio. Dez dos 27 exercícios novos têm vídeos incluídos; os outros 17 continuam como “Vídeo pendente”. Os 16 MP4 anteriores foram preservados.
+Versões em máquina, halteres, Smith e polia têm entradas próprias quando representam variações diferentes. Os novos exercícios aparecem na biblioteca e nos seletores das rotinas e do treino livre. As seis atividades solicitadas aparecem na seção Cardio da biblioteca e em Registrar cardio. Dezessete dos 27 exercícios novos têm vídeos incluídos; os outros dez continuam como “Vídeo pendente”. Os 16 MP4 anteriores foram preservados.
 
 No mergulho assistido, os kg representam assistência. O app não sugere aumento automático, nem calcula volume em kg, recordes de carga ou 1RM para esse movimento. As séries continuam contando para o grupo muscular.
 
@@ -60,7 +60,13 @@ No mergulho assistido, os kg representam assistência. O app não sugere aumento
 
 Incluídas dez demonstrações da **YouCan Workout Library**, com fonte identificada no player: supino na máquina, supino inclinado na máquina, crucifixo na máquina, crossover, remada no Smith, rosca Scott na máquina, rosca na polia, tríceps corda, abdominal na máquina e elevação de pernas. Os arquivos foram conferidos por sequências de quadros do original e da edição, exportados com FFmpeg em H.264/30 fps, sem áudio, com capa e fast start, e decodificados integralmente. O vínculo oficial da biblioteca com @joinyoucan continua não confirmado.
 
-O catálogo de 46 exercícios tem 26 entradas com vídeo contando a referência de supino com barra; restam 20 pendências: 17 do catálogo novo e as três anteriores. A lista completa e os candidatos rejeitados ficam em `public/media/fontes.json`. Os arquivos chamados “Lever Front Pulldown” e “Lever Back Extension” mostravam, respectivamente, uma polia e um banco com peso corporal; por isso não foram associados a aparelhos diferentes dos demonstrados.
+O catálogo de 46 exercícios tem 35 entradas com vídeo contando a referência de supino com barra; restam 11 pendências: dez do catálogo novo e panturrilha com halteres. A lista completa e os candidatos rejeitados ficam em `public/media/fontes.json`. Os arquivos chamados “Lever Front Pulldown” e “Lever Back Extension” mostravam, respectivamente, uma polia e um banco com peso corporal; por isso não foram associados a aparelhos diferentes dos demonstrados.
+
+### Novas fontes para as pendências
+
+Acrescentados nove vídeos: mesa flexora, flexora sentada, leg press horizontal, abdução de quadril, agachamento Hack, supino no Smith, desenvolvimento na máquina, tríceps na máquina e extensão lombar. Cinco vêm de Goulart / wger sob **CC BY-SA 4.0**, incluindo as edições e capas derivadas sob a mesma licença; três são obras do **CDC em domínio público**, obtidas no Wikimedia Commons; um vem de **Antoni Shkraba / Pexels**. Fonte, autor, licença e indicação de edição aparecem no player.
+
+Os vídeos do CDC têm resolução original de 320 × 240, identificada como baixa resolução; a exportação preserva os pixels originais. O supino no Smith mostra a variação inclinada. O arquivo do wger intitulado “Seated Hip Adduction” foi identificado visualmente como abdução por mostrar apoios externos às coxas e afastamento dos joelhos, e foi associado a essa entrada.
 
 ## Dados pessoais
 

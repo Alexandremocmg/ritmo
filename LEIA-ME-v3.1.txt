@@ -3,7 +3,7 @@ RITMO V3.1 — DIÁRIO DE TREINO
 PARA ABRIR
 Extraia TODO o ZIP para uma pasta e abra Ritmo.html no navegador.
 Mantenha public/media junto ao HTML, na estrutura incluída no pacote.
-Os 26 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
+Os 35 arquivos de vídeo continuam locais. Não é necessário abrir o TikTok.
 
 MELHORIAS INSPIRADAS NOS RECURSOS PÚBLICOS DO HEVY
 - Interface com destaque azul, cartões de rotinas e temas claro e escuro.
@@ -34,10 +34,10 @@ Abra o mesmo Ritmo.html no mesmo navegador para preservar a continuidade dos dad
 Não são inseridos treinos fictícios no histórico.
 
 VÍDEOS INCLUÍDOS
-25 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 26 MP4.
+34 exercícios têm demonstração incluída, além da referência adicional de supino com barra: 35 MP4.
 Os oito arquivos anteriores de YouCan foram preservados. Fonte: @joinyoucan. Edição anterior: OpenCut.
 Novos seis clipes Pexels: Supino inclinado, Elevação lateral, Tríceps na polia, Rosca direta, Cadeira extensora, Panturrilha.
-Nas fichas padrão, Mesa flexora continua sem vídeo. Incluindo as alternativas do catálogo, também estão pendentes Flexora sentada e Panturrilha com halteres.
+Mesa flexora e flexora sentada agora têm demonstrações distintas; consulte public/media/fontes.json para as pendências atuais.
 Rosca com halteres agora inclui a variação sentada em banco inclinado, encontrada na compilação YouCan de origem 7701832936428997902, recortada de 19,55 a 24,45 segundos e editada com FFmpeg 9.0.2. O comparativo mostra erros acima e a execução indicada em verde abaixo.
 Os seis novos vídeos foram baixados, conferidos por sequências de quadros, cortados e exportados em H.264/yuv420p, 30 fps, sem áudio e com fast start. Mantida a proporção original, em 720 × 1280 ou 1280 × 720, sem alterar a velocidade. Foram criadas capas para esses clipes.
 A variação do supino inclinado foi conferida com halteres; o candidato no Smith foi descartado. Panturrilha mostra a variação em pé no step, em close das pernas e pés. Rosca direta usa barra reta; tríceps na polia usa barra curta. Os clipes são referências visuais de banco de imagens, sem certificação da execução individual.
@@ -63,7 +63,7 @@ REMADA NA MÁQUINA — BIBLIOTECA ALTERNATIVA
 Incluída a demonstração Lever Seated Row da YouCan Workout Library, com apoio para o peito e alavancas. Fonte identificada no player. Vínculo oficial com @joinyoucan não confirmado. Conferência por quadros e edição FFmpeg 9.0.2, sem áudio, H.264, 30 fps, com capa e fast start.
 
 CATÁLOGO V3.3
-46 exercícios de musculação e 9 atividades de cardio. Acrescentados 27 exercícios sem repetir os 9 movimentos equivalentes já cadastrados. Busca por nomes equivalentes, sem distinguir acentos. As rotinas e os históricos anteriores mantêm os nomes originais. Dez das novas entradas têm vídeo incluído; as demais 17 seguem pendentes. No mergulho assistido, registre kg de assistência; não há progressão automática, recorde de carga, 1RM ou volume em kg para essa assistência.
+46 exercícios de musculação e 9 atividades de cardio. Acrescentados 27 exercícios sem repetir os 9 movimentos equivalentes já cadastrados. Busca por nomes equivalentes, sem distinguir acentos. As rotinas e os históricos anteriores mantêm os nomes originais. Dezessete das novas entradas têm vídeo incluído; as demais dez seguem pendentes. No mergulho assistido, registre kg de assistência; não há progressão automática, recorde de carga, 1RM ou volume em kg para essa assistência.
 
 DEZ VÍDEOS NOVOS — BIBLIOTECA YOUCAN
 Supino na máquina — Supino sentado na máquina com alavancas
@@ -76,4 +76,17 @@ Abdominal na máquina — Abdominal sentado na máquina com alavancas
 Elevação de pernas — Elevação de pernas estendidas na Captain’s Chair
 Rosca na polia — Rosca em pé na polia baixa com barra curta
 Tríceps corda — Tríceps na polia alta com corda
-Fonte: YouCan Workout Library, com vínculo oficial com @joinyoucan não confirmado. Origem, cortes, conferência visual e hashes em public/media/fontes.json. Os 16 vídeos anteriores foram mantidos. Total: 26 MP4; 20 exercícios ainda sem vídeo no catálogo completo.
+Fonte: YouCan Workout Library, com vínculo oficial com @joinyoucan não confirmado. Origem, cortes, conferência visual e hashes em public/media/fontes.json. Os 16 vídeos anteriores foram mantidos. Total atualizado: 35 MP4; 11 exercícios ainda sem vídeo no catálogo completo.
+
+NOVE DEMONSTRAÇÕES ADICIONAIS
+Mesa flexora — Goulart / wger — CC BY-SA 4.0
+Flexora sentada — Goulart / wger — CC BY-SA 4.0
+Abdução de quadril — Goulart / wger — CC BY-SA 4.0
+Desenvolvimento na máquina — Goulart / wger — CC BY-SA 4.0
+Supino no Smith — Antoni Shkraba / Pexels — Pexels License
+Leg press horizontal — Centers for Disease Control and Prevention (CDC) / Wikimedia Commons — Domínio público (obra do CDC)
+Agachamento Hack — Goulart / wger — CC BY-SA 4.0
+Tríceps na máquina — Centers for Disease Control and Prevention (CDC) / Wikimedia Commons — Domínio público (obra do CDC)
+Extensão lombar — Centers for Disease Control and Prevention (CDC) / Wikimedia Commons — Domínio público (obra do CDC)
+As edições e capas dos vídeos wger permanecem sob CC BY-SA 4.0. Créditos, fontes, licenças, cortes e hashes em public/media/fontes.json. Fontes e licenças também aparecem no player. Os clipes do CDC mantêm a baixa resolução do original.
+Pendentes: Panturrilha com halteres; Adução de quadril; Glúteo na máquina; Puxada articulada; Pullover na máquina; Elevação lateral na máquina; Crucifixo invertido; Desenvolvimento no Smith; Rosca bíceps na máquina; Tríceps mergulho assistido; Rotação de tronco.

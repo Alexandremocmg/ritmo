@@ -166,3 +166,113 @@ Trecho: 13.5–24.8 s; duração exportada: 11.3 s.
 Arquivo: public/media/youcan-library-triceps-corda.mp4
 Edição: FFmpeg 9.0.2, proporção preservada, H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
 Conferência: Polia alta, corda nas mãos e extensão e retorno dos cotovelos. Selecionada somente a parte marcada em verde pelo autor; excluída a parte inicial marcada em vermelho.
+
+NOVE VÍDEOS ADICIONAIS — FONTES COM LICENÇA DECLARADA
+
+Mesa flexora
+Variação: Flexão de joelhos deitado na mesa flexora
+Autor: Goulart / wger
+Fonte: https://wger.de/api/v2/video/35/
+Arquivo de origem: https://wger.de/media/exercise-video/365/becaf013-5044-40d0-bae9-7ed60c973737.MOV
+Licença: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Edição e capa derivadas distribuídas sob CC BY-SA 4.0; corte, redimensionamento, conversão para H.264/30 fps e remoção de áudio.
+Trecho: 0.5–14 s; duração exportada: 13.5 s.
+Arquivo: wger-mesa-flexora.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Pessoa deitada de barriga para baixo no banco, rolo atrás dos tornozelos e flexão e retorno dos joelhos contra alavanca.
+
+Flexora sentada
+Variação: Flexão de joelhos na cadeira flexora sentada
+Autor: Goulart / wger
+Fonte: https://wger.de/api/v2/video/37/
+Arquivo de origem: https://wger.de/media/exercise-video/366/43df4b79-d4c3-4fbf-bcb5-e0d825b84120.MOV
+Licença: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Edição e capa derivadas distribuídas sob CC BY-SA 4.0; corte, redimensionamento, conversão para H.264/30 fps e remoção de áudio.
+Trecho: 8–22 s; duração exportada: 14 s.
+Arquivo: wger-flexora-sentada.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Pessoa sentada com apoio sobre as coxas, rolo atrás das pernas e flexão e retorno dos joelhos.
+
+Abdução de quadril
+Variação: Abdução de quadril na cadeira abdutora
+Autor: Goulart / wger
+Fonte: https://wger.de/api/v2/video/74/
+Arquivo de origem: https://wger.de/media/exercise-video/12/5148c579-5df2-4618-9a7b-a2e29ac4dd7d.MOV
+Licença: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Edição e capa derivadas distribuídas sob CC BY-SA 4.0; corte, redimensionamento, conversão para H.264/30 fps e remoção de áudio.
+Trecho: 1–18 s; duração exportada: 17 s.
+Arquivo: wger-abducao-quadril.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Embora o cadastro da fonte use o título Seated Hip Adduction, o vídeo mostra apoios nas faces externas das coxas e afastamento dos joelhos contra esses apoios. Associado à abdução, sem usar o título da fonte como prova do movimento.
+
+Desenvolvimento na máquina
+Variação: Desenvolvimento sentado na máquina com puxadores
+Autor: Goulart / wger
+Fonte: https://wger.de/api/v2/video/11/
+Arquivo de origem: https://wger.de/media/exercise-video/543/dbfd396b-1aab-4a64-a50b-2c31ff0a2cf7.MOV
+Licença: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Edição e capa derivadas distribuídas sob CC BY-SA 4.0; corte, redimensionamento, conversão para H.264/30 fps e remoção de áudio.
+Trecho: 0.5–11.5 s; duração exportada: 11 s.
+Arquivo: wger-desenvolvimento-maquina.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Pessoa sentada com encosto, puxadores articulados ao lado dos ombros e ciclos de empurrar acima da cabeça e retorno.
+
+Supino no Smith
+Variação: Supino inclinado no Smith
+Autor: Antoni Shkraba / Pexels
+Fonte: https://www.pexels.com/video/a-man-working-out-in-the-gym-4920810/
+Arquivo de origem: https://www.pexels.com/video/a-man-working-out-in-the-gym-4920810/
+Licença: Pexels License — https://www.pexels.com/license/
+Edição de trecho, redimensionamento, conversão de formato e remoção do áudio.
+Trecho: 0.4–10.4 s; duração exportada: 10 s.
+Arquivo: pexels-supino-smith.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Banco inclinado e barra conectada às guias verticais do Smith, com ciclos de descida e subida. O candidato antes rejeitado para halteres corresponde à entrada genérica Supino no Smith, com a inclinação explícita na variação.
+
+Leg press horizontal
+Variação: Leg press sentado com plataforma fixa e banco móvel
+Autor: Centers for Disease Control and Prevention (CDC) / Wikimedia Commons
+Fonte: https://commons.wikimedia.org/wiki/File:Muscle_Strengthening_at_the_Gym_-_Seated_Leg_Press.webm
+Arquivo de origem: https://upload.wikimedia.org/wikipedia/commons/8/83/Muscle_Strengthening_at_the_Gym_-_Seated_Leg_Press.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+Licença: Domínio público (obra do CDC) — https://commons.wikimedia.org/wiki/File:Muscle_Strengthening_at_the_Gym_-_Seated_Leg_Press.webm#Licensing
+Fonte declarada em domínio público no Wikimedia Commons. Edição de trecho, conversão de formato e remoção do áudio; não indica endosso do CDC.
+Trecho: 33–40.6 s; duração exportada: 7.566667 s.
+Arquivo: cdc-leg-press-horizontal.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Banco se afasta e retorna em relação à plataforma fixa em movimento de leg press sentado; não é o trenó inclinado a 45°.
+
+Agachamento Hack
+Variação: Agachamento Hack em trenó inclinado
+Autor: Goulart / wger
+Fonte: https://wger.de/api/v2/video/41/
+Arquivo de origem: https://wger.de/media/exercise-video/375/d08a943d-c765-42b5-9ece-b80d90f2aefe.MOV
+Licença: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Edição e capa derivadas distribuídas sob CC BY-SA 4.0; corte, redimensionamento, conversão para H.264/30 fps e remoção de áudio.
+Trecho: 7–21 s; duração exportada: 14 s.
+Arquivo: wger-agachamento-hack.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Costas e ombros apoiados no trenó, pés na plataforma inferior e flexão e extensão dos joelhos com deslocamento do trenó nas guias.
+
+Tríceps na máquina
+Variação: Extensão dos cotovelos na máquina de tríceps com apoio
+Autor: Centers for Disease Control and Prevention (CDC) / Wikimedia Commons
+Fonte: https://commons.wikimedia.org/wiki/File:Muscle_Strengthening_at_the_Gym_-_Arm_Extension.webm
+Arquivo de origem: https://upload.wikimedia.org/wikipedia/commons/8/85/Muscle_Strengthening_at_the_Gym_-_Arm_Extension.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+Licença: Domínio público (obra do CDC) — https://commons.wikimedia.org/wiki/File:Muscle_Strengthening_at_the_Gym_-_Arm_Extension.webm#Licensing
+Fonte declarada em domínio público no Wikimedia Commons. Edição de trecho, conversão de formato e remoção do áudio; não indica endosso do CDC.
+Trecho: 20–28.3 s; duração exportada: 8.3 s.
+Arquivo: cdc-triceps-maquina.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Braços apoiados à frente e extensão dos cotovelos para empurrar os puxadores para baixo; resistência por alavancas da máquina.
+
+Extensão lombar
+Variação: Extensão do tronco sentado na máquina Back Extension
+Autor: Centers for Disease Control and Prevention (CDC) / Wikimedia Commons
+Fonte: https://commons.wikimedia.org/wiki/File:Muscle_Strengthening_at_the_Gym_-_Back_Extension.webm
+Arquivo de origem: https://upload.wikimedia.org/wikipedia/commons/9/95/Muscle_Strengthening_at_the_Gym_-_Back_Extension.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+Licença: Domínio público (obra do CDC) — https://commons.wikimedia.org/wiki/File:Muscle_Strengthening_at_the_Gym_-_Back_Extension.webm#Licensing
+Fonte declarada em domínio público no Wikimedia Commons. Edição de trecho, conversão de formato e remoção do áudio; não indica endosso do CDC.
+Trecho: 15.5–24.4 s; duração exportada: 8.9 s.
+Arquivo: cdc-extensao-lombar.mp4
+Edição: FFmpeg 9.0.2; H.264/yuv420p, 30 fps, sem áudio, fast start e capa.
+Conferência: Pessoa sentada, apoio da resistência atrás da parte superior do tronco e extensão e retorno do tronco na máquina.

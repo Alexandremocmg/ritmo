@@ -1,6 +1,6 @@
 {
   "name": "ritmo",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "private": true,
   "description": "Diário de treino local com rotinas, histórico e vídeos de exercícios.",
   "scripts": {
