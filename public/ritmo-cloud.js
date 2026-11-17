@@ -51,15 +51,6 @@ function authForm(mode,email=''){
   const verify=mode==='verify',reset=mode.startsWith('reset'),signup=mode==='signup';
   openModal(verify?'Verificar e-mail':reset?'Recuperar acesso':signup?'Criar conta Ritmo':'Entrar no Ritmo',`<form id="cloud-auth-form" data-mode="${mode}">${signup?label('Nome','name','','text','autocomplete="name" maxlength="100" required'):''}${label('E-mail','email',email,'email','autocomplete="email" required maxlength="254"')}${verify?label('Código recebido por e-mail','code','','text','inputmode="numeric" autocomplete="one-time-code" required minlength="4" maxlength="12"'):(!reset||mode==='reset-confirm')?label('Senha','password','','password',`autocomplete="${signup||reset?'new-password':'current-password'}" required minlength="8" maxlength="128"`):''}${mode==='reset-confirm'?label('Código recebido','code','','text','inputmode="numeric" autocomplete="one-time-code" required minlength="4" maxlength="12"'):reset?'<p class="mini-note mt">Enviaremos um código de recuperação por e-mail.</p>':''}<p id="cloud-auth-message" class="mini-note mt" role="status"></p><div class="actions mt"><button class="primary" type="submit">${verify?'Confirmar código':reset?(mode==='reset-confirm'?'Salvar nova senha':'Enviar código'):signup?'Criar conta':'Entrar'}</button>${verify?button('Reenviar código','resend'):!signup&&!reset?button('Esqueci minha senha','reset'):''}</div></form>`);
 }
-function safeError(error){
-  const code=String(error?.code||'');
-  if(/INVALID_EMAIL_OR_PASSWORD|INVALID_PASSWORD|USER_NOT_FOUND/.test(code))return 'E-mail ou senha incorretos.';
-  if(/USER_ALREADY_EXISTS/.test(code))return 'Este e-mail já possui uma conta. Entre ou recupere sua senha.';
-  if(/PASSWORD_TOO_SHORT/.test(code))return 'Use uma senha com pelo menos 8 caracteres.';
-  if(/OTP|TOKEN.*EXPIRED|INVALID_TOKEN/.test(code))return 'Código inválido ou expirado. Solicite um novo código.';
-  if(/RATE_LIMIT|TOO_MANY/.test(code))return 'Muitas tentativas. Aguarde um pouco e tente novamente.';
-  return 'Não foi possível concluir. Confira a conexão e tente novamente.';
-}
 async function checkSession(){
   if(!client||authBusy)return;
   const generation=authGeneration;
@@ -74,18 +65,27 @@ document.addEventListener('submit',async event=>{
   authBusy=true;authGeneration++;const submit=form.querySelector('[type="submit"]');submit.disabled=true;
   const data=new FormData(form),email=String(data.get('email')).trim(),password=String(data.get('password')||''),code=String(data.get('code')||'').trim(),mode=form.dataset.mode;
   const status=form.querySelector('#cloud-auth-message');status.textContent='Aguarde…';
+  let stage=mode,created=false;
   try{
     let result;
     if(mode==='verify')result=await client.emailOtp.verifyEmail({email,otp:code});
     else if(mode.startsWith('reset'))result=mode==='reset-confirm'?await client.emailOtp.resetPassword({email,otp:code,password}):await client.forgetPassword.emailOtp({email});
     else result=mode==='signup'?await client.signUp.email({email,password,name:String(data.get('name')).trim()}):await client.signIn.email({email,password});
-    if(result.error){if(result.error.code==='EMAIL_NOT_VERIFIED'){authForm('verify',email);return}throw result.error}
+    if(result.error){if(RitmoAuthErrors.needsVerification(result.error)){authForm('verify',email);return}throw result.error}
+    created=mode==='signup'&&!!result.data?.user;
     if(mode.startsWith('reset')){if(mode==='reset-confirm'){authForm('login',email);toast('Senha atualizada. Entre com a nova senha.')}else{authForm('reset-confirm',email);$('#cloud-auth-message').textContent='Se houver uma conta, o código será enviado ao e-mail informado.'}return}
-    const next=sessionResult(await client.getSession());
+    stage='session';const next=sessionResult(await client.getSession());
     if(next){await attach(next);toast('Conta conectada. Seus dados anteriores continuam separados neste navegador.')}
-    else if(mode==='signup'){authForm('verify',email)}
+    else if(mode==='signup'){
+      if(result.data?.token||result.data?.session){authForm('login',email);$('#cloud-auth-message').textContent='Conta criada. Entre para continuar. Se a sessão não permanecer aberta, confira as permissões de cookies do navegador.'}
+      else authForm('verify',email);
+    }
     else {authForm('login',email);toast('E-mail confirmado. Entre para continuar.')}
-  }catch(error){if(status.isConnected)status.textContent=safeError(error)}
+  }catch(error){
+    if(RitmoAuthErrors.needsVerification(error)){authForm('verify',email)}
+    else if(created){authForm('login',email);$('#cloud-auth-message').textContent='Conta criada, mas não foi possível iniciar a sessão. '+RitmoAuthErrors.message(error,stage)}
+    else if(status.isConnected)status.textContent=RitmoAuthErrors.message(error,stage);
+  }
   finally{authBusy=false;if(submit.isConnected)submit.disabled=false;mount()}
 });
 document.addEventListener('click',async event=>{

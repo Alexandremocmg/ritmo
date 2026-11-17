@@ -3,6 +3,21 @@ const D=require('./public/training-data.js');
 const {Store}=require('./public/cloud-store.js');
 const {createHandler,validateBody,MAX_BYTES}=require('./server/cloud.cjs');
 const {authURL}=require('./server/config.cjs');
+const AuthErrors=require('./public/auth-errors.js');
+test('erros reais do SDK são reconhecidos em formato normalizado e aninhado',()=>{
+  for(const error of [{code:'invalid_credentials',status:400},{code:'unexpected_failure',error:{code:'INVALID_EMAIL_OR_PASSWORD',status:401}},{error:{code:'invalid_credentials',status:400}}])assert.match(AuthErrors.message(error),/E-mail ou senha incorretos/);
+  assert(AuthErrors.needsVerification({code:'email_not_confirmed'}));
+  assert(AuthErrors.needsVerification({error:{code:'EMAIL_NOT_VERIFIED',status:403}}));
+  assert.match(AuthErrors.message({code:'user_already_exists'}),/já possui uma conta/);
+  assert.match(AuthErrors.message({code:'weak_password'}),/senha mais forte/);
+  assert.match(AuthErrors.message({code:'unexpected_failure',error:{code:'EMAIL_PASSWORD_SIGNUP_DISABLED',status:403}}),/desativado/);
+  assert.match(AuthErrors.message({error:{code:'INVALID_ORIGIN',status:403}}),/domínio/);
+});
+test('diagnóstico de autenticação não expõe mensagens, senhas ou tokens retornados pelo servidor',()=>{
+  const error={message:'private@example.com password=private-secret token=private-jwt',code:'unexpected_failure',error:{code:'FAILED_TO_CREATE_USER',status:500,message:'private-secret'}};
+  const message=AuthErrors.message(error,'signup');assert.match(message,/SIGNUP \/ FAILED_TO_CREATE_USER \/ 500/);assert(!message.includes('private'));
+  assert.match(AuthErrors.message(new TypeError('private-secret')),/navegador/);
+});
 function storage(){const map=new Map();return {getItem:key=>map.get(key)??null,setItem:(key,value)=>map.set(key,value),removeItem:key=>map.delete(key),map}}
 function fixture(){
   const disk=storage(),rows=new Map(),statuses=[],data=[],calls=[];let fail=false,pause=null;
