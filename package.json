@@ -1,13 +1,19 @@
 {
   "name": "ritmo",
-  "version": "3.3.2",
+  "version": "3.4.0",
   "private": true,
   "description": "Diário de treino local com rotinas, histórico e vídeos de exercícios.",
   "scripts": {
     "build": "node build.cjs",
-    "test": "node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs test-catalog.cjs"
+    "test": "node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs test-catalog.cjs test-cloud.cjs"
   },
   "engines": {
-    "node": ">=20"
-  }
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@neon/auth": "0.8.2",
+    "@neondatabase/serverless": "1.2.1",
+    "jose": "6.2.17"
+  },
+  "devDependencies": {"esbuild": "0.28.2"}
 }

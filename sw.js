@@ -1,7 +1,7 @@
 'use strict';
 const CACHE_PREFIX='ritmo-shell:'+self.registration.scope+':';
-const CACHE_NAME=CACHE_PREFIX+'bd3f4aa09148f366';
-const SHELL=["./","./index.html","./Ritmo.html","./public/index.html","./manifest.webmanifest","./public/library.js","./public/training-data.js","./public/ritmo-app.js","./public/ritmo-actions.js","./public/ritmo-v3.js","./public/ritmo-v3-actions.js","./public/pwa.js","./public/ritmo.css","./public/ritmo-v3.css","./public/pwa.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon.svg","./icons/maskable-512.png"].map(file=>new URL(file,self.registration.scope).href);
+const CACHE_NAME=CACHE_PREFIX+'40718fa73d082b67';
+const SHELL=["./","./index.html","./Ritmo.html","./public/index.html","./manifest.webmanifest","./public/library.js","./public/training-data.js","./public/ritmo-app.js","./public/ritmo-actions.js","./public/ritmo-v3.js","./public/ritmo-v3-actions.js","./public/pwa.js","./public/cloud-store.js","./public/ritmo-cloud.js","./public/ritmo.css","./public/ritmo-v3.css","./public/pwa.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon.svg","./icons/maskable-512.png"].map(file=>new URL(file,self.registration.scope).href);
 const SHELL_URLS=new Set(SHELL);
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL)));
@@ -14,6 +14,8 @@ self.addEventListener('message',event=>{
 });
 self.addEventListener('fetch',event=>{
   const request=event.request,url=new URL(request.url),scope=new URL(self.registration.scope);
+  // Authentication and private backups must never enter the offline cache.
+  if(/\/(?:api|assets)\//.test(url.pathname))return;
   if(request.method!=='GET'||url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname)||request.headers.has('range'))return;
   // Keep media on the network: no silent 30 MB download and no cached partial responses.
   if(/\.(?:mp4|webm|mov|jpg|jpeg)$/i.test(url.pathname))return;

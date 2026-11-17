@@ -90,3 +90,22 @@ O build gera **public/index.html**, **Ritmo.html**, **index.html**, os ícones P
 Foram verificados dados, migração, tipos de séries, volume, progressão, controladores da interface, associação dos seis novos vídeos, créditos, integridade dos arquivos e decodificação completa dos novos MP4. A inspeção visual dos movimentos foi feita em sequências de quadros. A reprodução automatizada dentro do navegador não pôde ser revalidada porque a política administrativa do Windows bloqueou a automação do Edge.
 
 Instruções adicionais: [LEIA-ME-v3.1.txt](LEIA-ME-v3.1.txt).
+# Contas e sincronização (3.4)
+
+Na hospedagem Vercel, o Perfil oferece cadastro, entrada com e-mail/senha, confirmação por código, recuperação de senha e sincronização do perfil, fichas, histórico, planejamento, cardio e medidas. O SDK oficial `@neon/auth` mantém a sessão; as funções `/api/account` verificam JWT Ed25519 com o JWKS da mesma branch e restringem consultas ao proprietário autenticado. A conexão Postgres nunca vai para o navegador.
+
+As variáveis existentes da integração são suficientes:
+
+- `DATABASE_URL`: conexão usada exclusivamente pelo servidor.
+- `DATABASE_NEON_AUTH_BASE_URL`: URL pública do Neon Auth. Alternativa aceita: `DATABASE_VITE_NEON_AUTH_URL`.
+- `DATABASE_POSTGRES_DATABASE` não precisa ser lida: o banco já faz parte da conexão.
+
+O build da Vercel instala as dependências declaradas e executa `node build-vercel.cjs`. O comando gera `dist/` com a interface e o SDK; as funções ficam em `api/`. No primeiro acesso autenticado ao banco, a função cria apenas a tabela `public.ritmo_accounts`, caso ainda não exista. Não altera tabelas do Neon Auth nem executa migrações do Better Auth.
+
+Cadastros não importam automaticamente dados anteriores. Após entrar, use **Importar dados deste navegador** para substituir o perfil da conta pelos dados locais, com cópia de recuperação. Arquivos pessoais de vídeo permanecem no aparelho; seus IDs locais não são enviados. No GitHub Pages e no arquivo HTML, o app continua disponível no modo local, sem API de contas.
+
+Cada conta possui uma cópia local separada para acesso offline. A conta anteriormente selecionada pode ser aberta offline neste mesmo navegador; sair da conta remove essa seleção, preservando a cópia para a próxima entrada. O app só envia dados após confirmar a sessão. Alterações pendentes sobrevivem ao recarregamento; revisões condicionais impedem sobrescrita silenciosa entre aparelhos. Conflitos exigem escolha explícita e guardam as versões anteriores no armazenamento local. Uma sessão de treino aberta impede trocas de conta e substituições dos dados.
+
+No Neon, habilite e-mail/senha, cadastre a origem de produção como domínio confiável e, se exigir verificação, selecione códigos de verificação. Os fluxos por código utilizam o provedor de e-mail configurado no Neon; envio real depende dessa configuração. Para operação de produção, siga a [configuração de e-mail recomendada pelo Neon](https://neon.com/docs/auth/production-checklist). Login social não é oferecido nesta versão.
+
+Verificação local: `node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs test-catalog.cjs test-cloud.cjs`. Os testes de nuvem usam adaptadores simulados: cobrem autorização por proprietário, isolamento de contas, cache offline, conflitos, alterações durante envio, limites e proteção de treino ativo. Cadastro, entrega de e-mail, restauração da sessão pelo SDK e escrita no Postgres precisam também de validação com uma conta real na hospedagem. Nenhum teste cria usuários reais.

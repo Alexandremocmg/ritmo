@@ -1,7 +1,7 @@
 const fs=require('node:fs');
 const crypto=require('node:crypto');
 require('./scripts/generate-icons.cjs')();
-const tags=['library.js','training-data.js','ritmo-app.js','ritmo-actions.js','ritmo-v3.js','ritmo-v3-actions.js','pwa.js'];
+const tags=['library.js','training-data.js','ritmo-app.js','ritmo-actions.js','ritmo-v3.js','ritmo-v3-actions.js','pwa.js','cloud-store.js','ritmo-cloud.js'];
 const styles=['ritmo.css','ritmo-v3.css','pwa.css'];
 let html=fs.readFileSync('public/index-v2.html','utf8').replace('#16271f','#287bfa').replace('Ritmo — seu treino aprende com você','Ritmo — seu diário de treino');
 html=html.replace('<link rel="stylesheet" href="ritmo.css">',styles.map(n=>`<link rel="stylesheet" href="${n}">`).join(''));

@@ -14,6 +14,8 @@ self.addEventListener('message',event=>{
 });
 self.addEventListener('fetch',event=>{
   const request=event.request,url=new URL(request.url),scope=new URL(self.registration.scope);
+  // Authentication and private backups must never enter the offline cache.
+  if(/\/(?:api|assets)\//.test(url.pathname))return;
   if(request.method!=='GET'||url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname)||request.headers.has('range'))return;
   // Keep media on the network: no silent 30 MB download and no cached partial responses.
   if(/\.(?:mp4|webm|mov|jpg|jpeg)$/i.test(url.pathname))return;
