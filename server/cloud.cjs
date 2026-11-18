@@ -1,6 +1,6 @@
 'use strict';
 const D=require('../public/training-data.js');
-const {authURL,noStore}=require('./config.cjs');
+const {authURL,authJWKSURL,noStore}=require('./config.cjs');
 const MAX_BYTES=1024*1024;
 let jwks,ready;
 async function identity(req){
@@ -8,7 +8,7 @@ async function identity(req){
   if(!/^Bearer [^\s]+$/.test(header)||header.length>20000)return null;
   const base=authURL();if(!base)return null;
   const {createRemoteJWKSet,jwtVerify}=await import('jose');
-  jwks||=createRemoteJWKSet(new URL(base+'/.well-known/jwks.json'),{timeoutDuration:8000});
+  jwks||=createRemoteJWKSet(authJWKSURL(base),{timeoutDuration:8000});
   try{
     const {payload}=await jwtVerify(header.slice(7),jwks,{algorithms:['EdDSA'],issuer:new URL(base).origin,audience:new URL(base).origin,requiredClaims:['sub','exp','iat'],maxTokenAge:'20m'});
     return typeof payload.sub==='string'&&payload.sub.length<=200&&payload.banned!==true?payload.sub:null;

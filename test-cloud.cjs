@@ -2,7 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const D=require('./public/training-data.js');
 const {Store}=require('./public/cloud-store.js');
 const {createHandler,validateBody,MAX_BYTES}=require('./server/cloud.cjs');
-const {authURL}=require('./server/config.cjs');
+const {authURL,authJWKSURL}=require('./server/config.cjs');
 const AuthErrors=require('./public/auth-errors.js');
 test('erros reais do SDK são reconhecidos em formato normalizado e aninhado',()=>{
   for(const error of [{code:'invalid_credentials',status:400},{code:'unexpected_failure',error:{code:'INVALID_EMAIL_OR_PASSWORD',status:401}},{error:{code:'invalid_credentials',status:400}}])assert.match(AuthErrors.message(error),/E-mail ou senha incorretos/);
@@ -32,10 +32,19 @@ function fixture(){
   return {disk,rows,statuses,data,calls,make,offline:value=>fail=value,pause:value=>pause=value};
 }
 test('configuração aceita os nomes da integração e nunca retorna a conexão do Postgres',()=>{
-  assert.equal(authURL({DATABASE_NEON_AUTH_BASE_URL:'https://branch.neon.tech/neondb/auth/'}),'https://branch.neon.tech/neondb/auth');
-  assert.equal(authURL({DATABASE_VITE_NEON_AUTH_URL:'https://branch.neon.tech/auth'}),'https://branch.neon.tech/auth');
+  assert.equal(authURL({DATABASE_NEON_AUTH_BASE_URL:'https://branch.neon.tech/neondb/auth/'}),'https://branch.neon.tech/neondb/auth/');
+  assert.equal(authURL({DATABASE_VITE_NEON_AUTH_URL:'https://branch.neon.tech/auth'}),'https://branch.neon.tech/auth/');
   assert.equal(authURL({DATABASE_URL:'postgres://private'}),null);
   assert.equal(authURL({DATABASE_NEON_AUTH_BASE_URL:'https://user:secret@example.com'}),null);
+});
+test('JWKS preserva a branch sem duplicar barras e mantém a barra final do login',()=>{
+  for(const suffix of ['', '/', '///']){
+    const base='https://branch.neon.tech/neondb/auth'+suffix;
+    assert.equal(authJWKSURL(base).href,'https://branch.neon.tech/neondb/auth/.well-known/jwks.json');
+  }
+  const login=authURL({DATABASE_NEON_AUTH_BASE_URL:'https://branch.neon.tech/neondb/auth'});
+  assert.equal(login,'https://branch.neon.tech/neondb/auth/');
+  assert.equal(authJWKSURL(login).href,'https://branch.neon.tech/neondb/auth/.well-known/jwks.json');
 });
 test('nova conta recebe apenas um perfil inicial; conta existente carrega a nuvem',async()=>{
   const f=fixture(),s=f.make();f.disk.setItem('ritmo-v3',JSON.stringify({...D.initial(),profile:{...D.initial().profile,name:'Visitante'}}));
