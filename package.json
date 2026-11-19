@@ -5,7 +5,7 @@
   "description": "Diário de treino local com rotinas, histórico e vídeos de exercícios.",
   "scripts": {
     "build": "node build.cjs",
-    "test": "node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs test-catalog.cjs test-cloud.cjs"
+    "test": "node --test test-v3-data.cjs test-v3-regression.cjs test-pwa.cjs test-library.cjs test-catalog.cjs test-cloud.cjs test-gym.cjs"
   },
   "engines": {
     "node": "22.x"
